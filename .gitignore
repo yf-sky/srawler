@@ -1,25 +1,50 @@
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
+#ignore target under current directory and all subdirectories:
+target/
+*/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
+test-output/
+*/test-output/
+
+#ignore settings & gitignore file
+.settings/
+*/.settings/
+
+
 .springBeans
+*/.springBeans
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+.project
+
+*/.project
+
+.classpath
+
+*/.classpath
+
+
+*.log
+*.log.zip
+.DS_Store
+
+
 *.iml
-*.ipr
+.idea/*
+!.idea/runConfigurations/
 
-### NetBeans ###
-nbproject/private/
+### Gradle template
+.gradle
+gradlew
+gradlew.bat
 build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+#gradle/wrapper/gradle-wrapper.properties
